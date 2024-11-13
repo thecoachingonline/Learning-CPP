@@ -13,6 +13,13 @@ int main()
     std::cout << "5: Print wallet " << std::endl;
 
     std::cout << "6: Continue " << std::endl;
+
+    std::cout << "============== " << std::endl;
+    std::cout << "Type in 1-6" << std::endl;
+
+    int userOption;
+    std::cin >> userOption;
+    std::cout << "You chose: "  << userOption << std::endl;
     
     return 0;
 }
