@@ -20,6 +20,35 @@ int main()
     int userOption;
     std::cin >> userOption;
     std::cout << "You chose: "  << userOption << std::endl;
+
+    if (userOption == 0)
+    {
+        std::cout << "Invalid choice. Choose 1-6" << std::endl;
+    }
+    if (userOption == 1)
+    {
+        std::cout << "Help - you aim is to make money. Analysethe market and make bids and office" << std::endl;
+    }
+    if (userOption == 2)
+    {
+        std::cout << "Market looks good" << std::endl;
+    }
+    if (userOption == 3)
+    {
+        std::cout << "Mark and offer - enter the amount" << std::endl;
+    }
+    if (userOption == 4)
+    {
+        std::cout << "Mark a bid - enter the amount" << std::endl;
+    }
+    if (userOption == 5)
+    {
+        std::cout << "Your wallet is empty." << std::endl;
+    }
+    if (userOption == 6)
+    {
+        std::cout << "Going to next time frame." << std::endl;
+    }
     
     return 0;
 }
