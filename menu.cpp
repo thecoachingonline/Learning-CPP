@@ -2,6 +2,9 @@
 
 int main()
 {
+    while (true)
+    {
+    
     std::cout << "1: Print help " << std::endl;
 
     std::cout << "2: Print exchange stats" << std::endl;
@@ -49,6 +52,8 @@ int main()
     {
         std::cout << "Going to next time frame." << std::endl;
     }
-    
+
+
+    }
     return 0;
 }
