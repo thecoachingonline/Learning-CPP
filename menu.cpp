@@ -1,10 +1,7 @@
 #include <iostream>
 
-int main()
+void printMenu()
 {
-    while (true)
-    {
-    
     std::cout << "1: Print help " << std::endl;
 
     std::cout << "2: Print exchange stats" << std::endl;
@@ -18,12 +15,19 @@ int main()
     std::cout << "6: Continue " << std::endl;
 
     std::cout << "============== " << std::endl;
-    std::cout << "Type in 1-6" << std::endl;
 
+}
+int getUserOption()
+{
     int userOption;
+    std::cout << "Type in 1-6" << std::endl;
     std::cin >> userOption;
-    std::cout << "You chose: "  << userOption << std::endl;
+    std::cout << "You chose: " << userOption << std::endl;
+    return userOption;
+}
 
+void processUerOption(int userOption)
+{
     if (userOption == 0)
     {
         std::cout << "Invalid choice. Choose 1-6" << std::endl;
@@ -52,8 +56,15 @@ int main()
     {
         std::cout << "Going to next time frame." << std::endl;
     }
+}
 
-
+int main()
+{
+    while (true)
+    {
+        printMenu();
+        int userOption = getUserOption();
+        processUerOption(userOption);
     }
     return 0;
 }
